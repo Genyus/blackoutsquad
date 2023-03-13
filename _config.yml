@@ -7,23 +7,23 @@ remote_theme: dieghernan/chulapa
 # A. Site Settings /SEO options
 # Overall options for your site, would affect your site SEO
 # Default values are explained
-locale                  :     #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
-title                   : Chulapa 101    #default["repository_name"]
+locale                  : en-GB    #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
+title                   : Blackout Squad    #default["repository_name"]
 title_separator         :     #default [" | "]
-subtitle                : Chulapa Jekyll Theme starter pack    #default [your-repository-tagline]  
-description             : Chulapa Jekyll Theme starter pack #default [your-repository-tagline]
+subtitle                : Outdoor fitness for Black people    #default [your-repository-tagline]  
+description             : Blackout Squad is a non-profit sports club dedicated to encouraging people of African origin to participate in OCRs and other outdoor fitness events. #default [your-repository-tagline]
 url                     :     #See baseurl - On Github Pages you may leave it blank - If you use CNAME use your domain
 baseurl                 :     #On Github Pages you may leave it blank. Have a look to: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
 words_per_minute        :     #default[200]
-timezone                :     #"Europe/Madrid ,see https://jekyllrb.com/docs/configuration/options/ and https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone                : Europe/London    #"Europe/Madrid ,see https://jekyllrb.com/docs/configuration/options/ and https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # SEO
-og_image                :     #default[author.avatar (see below)] or [github-avatar]
+og_image                : assets/images/blackout-squad-logo-white-300x183.png    #default[author.avatar (see below)] or [github-avatar]
 twitter_site            :     #Avoid @
 author:
-  name                  :  Your Name   # Name Surname Company
+  name                  : Blackout Squad   # Name Surname Company
   avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
-  location              :  "Madrid, Spain"   # New York, USA 
+  location              :  "London, UK"   # New York, USA 
 #  links:                
 #    - url:  #A link or email: https://twitter.com/jack, mail@example.com
 #      icon: # A Fontawesome 5 code: fab fa-twitter - see https://fontawesome.com/
@@ -36,7 +36,7 @@ fa_v4_support: #Bool Add FontAwesome 4 support
 # Web tracking - Google services https://analytics.google.com/analytics/web/
 # gtag_id is the preferred option, see https://developers.google.com/analytics/devguides/collection/gtagjs/migration?hl=en
 # analytics provided for backwards compatibility
-gtag_id                 :  
+gtag_id                 : 357977468
 analytics_id            :  
 
 # Search providers
@@ -45,7 +45,7 @@ analytics_id            :
 # - algolia v4 https://www.algolia.com/ - needs further configuration
 # - google custom search engine https://cse.google.es/ 
 search:
-  provider              : lunr #Select a provider for enable search: lunr, algolia, google
+  provider              :  #Select a provider for enable search: lunr, algolia, google
   label                 :  #default ["Search"] Text on navbar when search is enabled 
   landing_page          :  #default ["/search"] Link on navbar 
   lunr_maxwords         :  #default [30] lunr only - May slow down your site build
@@ -90,57 +90,45 @@ comments:
 #   "brand" options would be set on the left side of your navbar
 #   "nav" would be set on the right side. Two-level nav links available
 navbar:
-  style     :  #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
+  style     : dual #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
   expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
   brand:
     title   :  Home # Title in navbar
     url     :  # default["url/baseurl"]
     img     :  # An small image, try 30x30px
   nav:
-  - title   : Blog # Label
-    url     : /blog/ # url	
-  - title   : Cheatsheets
-    url     : /cheatsheets
-  - title   : Extras
-    child   :
-      - title : Tags
-        url   : /tags
-      - title : Categories
-        url   : /categories
-      - title : Archive
-        url   : /archive
-      - title : Current skin
-        url   : /current-skin
-  - title   : Docs
-    url     : https://dieghernan.github.io/chulapa/docs/01-install
-  - title   : Use this template
-    url     : https://github.com/dieghernan/chulapa-101/generate
-#  - title   : # Label submenu
-#    child:		
-#    - title: # Child label		
-#      url  : # child url	
-#    - title: # Child label		
-#      url  : # child url	
+  - title   : About Us # Label
+    url     : "#about"
+  - title   : Events
+    url     : "#events"
+  - title   : Gallery
+    url     : "#gallery"
+  - title   : Contact Us
+    url     : "#contact"
 #Social links to be placed on your site footer
 footer:
   links:
-    - label : Repo on Github # Label
-      icon  : fab fa-github # Fontawesome 5 icon
-      url   : https://github.com/dieghernan/chulapa-101 # A link or email: https://twitter.com/jack, mail@example.com
-    - label: "RSS"
-      icon: "fa fa-rss"
-      url:  "./atom.xml"
+    - label : Instagram # Label
+      icon  : fa-brands fa-instagram # Fontawesome 5 icon
+      url   : https://instagram.com/blackoutsquad.uk # A link or email: https://twitter.com/jack, mail@example.com
+    - label: Meetup
+      icon: "fa-brands fa-meetup"
+      url:  "http://meetup.com/blackout-squad"
+    - label: Twitter
+      icon: "fa-brands fa-twitter"
+      url:  "https://twitter.com/BlackoutSquadUK"
   copyright: # default is © <year> <name> 
   
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
 googlefonts:
+  - url : 'https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic|Anton:regular'
  # - url : # 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
 
 # Theme and colors
 chulapa-skin: 
   highlight     :  # default["default"]
-  skin         :  # Optional predefined skins
+  skin         : gitdev # Optional predefined skins
   autothemer    :  true # Bool: Use autotheming
   vars          :    
     primary     : lightskyblue #default ["#007bff"] - Bootstrap blue
@@ -167,7 +155,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
+      layout: "landingpage"
       header_type: "base"
       include_on_search   : false
       cloudtag_url        : /tags #This is where the link on tags would redirect
