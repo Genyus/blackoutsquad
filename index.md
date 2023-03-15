@@ -64,4 +64,21 @@ With the right attitude and preparation, anybody can do a Tough Mudder — yes, 
 
 <h2 id="contact">Contact Us</h2>
 
-<script type="text/javascript" src="https://form.jotform.com/jsform/230706324955356"></script>
+<div id="tripetto"></div>
+<script src="https://unpkg.com/tripetto-runner-foundation"></script>
+<script src="https://unpkg.com/tripetto-runner-classic"></script>
+<script src="https://unpkg.com/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiVmVkZzBJRE1FY2dRNERpV2xFTzVGWEYvUFE4TGlnNHdsSDlvSWVHd2V6QT0iLCJkZWZpbml0aW9uIjoicVBuTEZjRU5QVUJiMVMxV0xFU3hjWU12YzlKSVJYWW9YK0VCRUZDdXBJQT0iLCJ0eXBlIjoiY29sbGVjdCJ9.X3vfHGjTbnwdvbQVwzP-A-EI6hR37RHVrrHZ7KRE_M0" });
+
+TripettoClassic.run({
+    element: document.getElementById("tripetto"),
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit
+});
+</script>
