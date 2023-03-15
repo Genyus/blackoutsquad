@@ -113,7 +113,7 @@ footer:
       url   : https://instagram.com/blackoutsquad.uk # A link or email: https://twitter.com/jack, mail@example.com
     - label: Meetup
       icon: "fa-brands fa-meetup"
-      url:  "http://meetup.com/blackout-squad"
+      url:  "https://www.meetup.com/blackout-squad/"
     - label: Twitter
       icon: "fa-brands fa-twitter"
       url:  "https://twitter.com/BlackoutSquadUK"
